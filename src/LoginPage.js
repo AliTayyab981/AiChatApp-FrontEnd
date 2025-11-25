@@ -225,7 +225,6 @@ const BackText = styled.Text`
   color: #aaa;
   margin-right: 330px;
 `;
-
 const ForgotText = styled.Text`
   margin-top: 15px;
   font-size: 14px;
