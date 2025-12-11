@@ -1,17 +1,19 @@
 import React from "react";
 import styled from "styled-components/native";
+import { colors } from "../theme/colors";
 
-export default function chatApp() {
+export default function SplashContent() {
   return (
     <Container>
-      <ChatImage source={require("./../assets/chatbox.png")} />
-      <Title>ChatAppp</Title>
+      <ChatImage source={require("../../assets/chatbox.png")} />
+      <Title>ChatApp</Title>
     </Container>
   );
 }
 
 const Container = styled.View`
-  margin-top: 400px;
+  flex: 1;
+  background-color: ${colors.background};
   align-items: center;
   justify-content: center;
 `;
@@ -25,4 +27,6 @@ const ChatImage = styled.Image`
 const Title = styled.Text`
   text-align: center;
   font-size: 24px;
+  color: ${colors.text};
+  font-weight: bold;
 `;
